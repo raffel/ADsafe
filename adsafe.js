@@ -1721,15 +1721,15 @@ var ADSAFE = (function () {
 //  This provides some protection against mishaps due to weakness in the
 //  document.getElementById function.
 
-            scripts = root.getElementsByTagName('script');
-            i = scripts.length - 1;
-            if (i < 0) {
-                error();
-            }
-            do {
-                root.removeChild(scripts[i]);
-                i -= 1;
-            } while (i >= 0);
+            // scripts = root.getElementsByTagName('script');
+            // i = scripts.length - 1;
+            // if (i < 0) {
+            //     error();
+            // }
+            // do {
+            //     root.removeChild(scripts[i]);
+            //     i -= 1;
+            // } while (i >= 0);
             root = make_root(root, id);
             dom = root[0];
 
